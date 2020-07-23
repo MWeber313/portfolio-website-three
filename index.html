@@ -143,12 +143,12 @@
 									<h3>Contact Me</h3>
 									<p>If you'd like to contact me, feel free to send me an email <a href="mailto:mack.webb37@gmail.com">here</a> or send it through this contact form!</p>
 									<span>* means field is required</span>
-									<form method="post" action="mailto:mack.webb37@gmail.com"  enctype="text/plain">
+									<form method="post" onsubmit="return contactFormValidation()"  enctype="text/plain">
 										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="*Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="*Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="*Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="*Message" rows="6"></textarea></div>
+											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="formName" placeholder="*Name" /></div>
+											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="formEmail" placeholder="*Email" /></div>
+											<div class="col-12"><input type="text" name="subject" id="formSubject" placeholder="*Subject" /></div>
+											<div class="col-12"><textarea name="message" id="formMessage" placeholder="*Message" rows="6"></textarea></div>
 											<div class="col-12">
 												<ul class="actions">
 													<li><input type="submit" class="primary" value="Send" /></li>
@@ -159,8 +159,6 @@
 									</form>
 								</div>
 							</section>
-
-		
 					</div>
 
 				<!-- Footer -->
@@ -182,6 +180,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src='assets/js/contact.js'></script>
 	</body>
 </html>
