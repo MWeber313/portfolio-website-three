@@ -1,3 +1,5 @@
+console.log('loaded!')
+
 let valid = true 
 
 function contactFormValidation() {
@@ -20,6 +22,7 @@ function contactFormValidation() {
     }
 
     if (valid != true) {
+        console.log('clicked')
         alert('Please fill out the form!')
     }
     else {
