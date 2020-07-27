@@ -2,7 +2,8 @@ console.log('loaded!')
 
 let valid = true 
 
-function contactFormValidation() {
+function contactFormValidation(event) {
+    event.preventdefault()
     let name = document.getElementById('formName')
     let email = document.getElementById('formEmail')
     let subject = document.getElementById('formSubject')
@@ -28,4 +29,8 @@ function contactFormValidation() {
     else {
         continue
     } 
+}
+
+function preventDefaultEvent(event) {
+    event.preventDefault()
 }
