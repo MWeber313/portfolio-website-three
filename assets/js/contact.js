@@ -25,6 +25,7 @@ function contactFormValidation(event) {
     if (valid != true) {
         console.log('clicked')
         alert('Please fill out the form!')
+        return false
     }
     else {
         continue
