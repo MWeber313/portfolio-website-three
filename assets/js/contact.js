@@ -35,3 +35,5 @@ function contactFormValidation(event) {
 function preventDefaultEvent(event) {
     event.preventDefault()
 }
+
+// Not using this at this time
